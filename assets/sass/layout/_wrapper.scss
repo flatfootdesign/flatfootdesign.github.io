@@ -21,6 +21,34 @@
 
 					padding: 0 $gutter;
 				}
+				> ul li {
+					padding-bottom: .5em;
+				}
+			}
+
+			.projectList {
+					padding-bottom: 3em;
+			}
+			
+			> .innerSmall {
+				$gutter: _size(gutter);
+
+				width: 100%;
+				max-width: _size(inner);
+				margin: 0 auto;
+				padding: 0 $gutter;
+
+				@include breakpoint('<=small') {
+					$gutter: _size(gutter) * 0.5;
+
+					padding: 0 $gutter;
+				}
+			
+			> h2 {
+				margin:0 auto .5em;
+				font-weight: bold;
+				}
+			
 			}
 		}
 	}

@@ -10,15 +10,15 @@
 		color: _palette(fg);
 		font-family: _font(family);
 		font-size: 16pt;
-		font-weight: _font(weight);
+		font-weight: lighter;
 		line-height: 1.75;
 
 		@include breakpoint('<=xlarge') {
-			font-size: 14pt;
+			font-size: 16pt;
 		}
 
 		@include breakpoint('<=large') {
-			font-size: 12pt;
+			font-size: 16pt;
 		}
 	}
 
@@ -74,11 +74,12 @@
 
 	h2, h3, h4, h5, h6 {
 		color: _palette(fg-bold);
-		font-weight: _font(weight-bold);
+		font-weight: lighter;
+		//font-weight: _font(weight-bold);
 		line-height: 1.5;
 		margin: 0 0 (_size(element-margin) * 1) 0;
-		text-transform: uppercase;
-		letter-spacing: _font(letter-spacing);
+		//text-transform: uppercase;
+		//letter-spacing: _font(letter-spacing);
 
 		a {
 			color: inherit;
@@ -86,7 +87,8 @@
 	}
 
 	h2 {
-		font-size: 1.4em;
+		font-size: 2em;
+		margin: -1em 0 2em 0;
 	}
 
 	h3 {

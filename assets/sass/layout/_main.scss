@@ -12,4 +12,34 @@
 		@include breakpoint('<=small') {
 			@include padding(3em, 0, (-3em, 0, 3em, 0));
 		}
+		> .inner section {
+			padding: 2em;
+			margin: 3em auto;			
+
+			h3 {
+				margin: 0 auto 1em;
+				font-weight: bold;
+			}
+		}
+	section.role {
+		background-color: _palette(bg-alt);
+		padding: 3em;
+		border-radius: 4px;
+
+		ul {
+			margin-bottom: 0;
+		}
+
+		ul li {
+			padding-bottom: 1em;			
+			}
+		
+		ul li:last-child {
+			padding-bottom: 0;
+		}
+
+		}
+	}
+	.ImgCaption {
+		margin: -2em 0 4em;
 	}
